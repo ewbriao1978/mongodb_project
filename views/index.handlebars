@@ -1,0 +1,26 @@
+<div class="jumbotron">
+  <h1 class="display-4">Bem-vindos ao meu blog!</h1>
+  <p class="lead">Este é um estudo de caso baseado no framework ExpressJS e com o uso do MongoDB.</p>
+  <hr class="my-4">
+  <p>Acredito que vocês irão aproveitar sua funcionalidade e códigos para demais projetos. Bom trabalho.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Crie uma conta</a>
+</div>
+
+
+<h2>Postagens recentes</h2> 
+
+{{#each postagens}}
+<div class="card">
+    <div class="card-body">
+        <h3>{{titulo}}</h3>
+        <p>{{descricao}}</p>
+        <a href="/postagem/{{slug}}"><button class="btn btn-success">Leia mais </button></a>
+        <hr>
+        <small>Categoria:{{categoria.nome}}</small><br>
+        <small>Data de publicação:{{data}}</small>
+    </div>
+</div>
+{{else}}
+    <h5>Nunhuma postagem</h5>
+
+{{/each}}
