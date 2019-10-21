@@ -11,8 +11,13 @@
 </head>
 <body>
     {{>_navbar}} <!navbar term load my navbar from bootstrap >
-    {{>_msg}} <! errors flash messagens partial loaded in this point > 
+   
     <div class="container mt-4">
+        {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+        {{else}}
+        {{/if}}
+         {{>_msg}} <! errors flash messagens partial loaded in this point > 
         {{{body}}}  
     </div>
     
