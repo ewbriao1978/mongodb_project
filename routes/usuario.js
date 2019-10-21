@@ -93,7 +93,7 @@ router.post("/login",(req,res,next) => {
         successRedirect: "/",
         failureRedirect: "/usuarios/login",
         failureFlash: true
-    })
+    })(req,res,next)
 
 })
 

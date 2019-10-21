@@ -5,17 +5,19 @@ require("../models/Categoria")
 const Categoria = mongoose.model("categorias")
 require("../models/Postagem")
 const Postagem = mongoose.model("postagens")
+const {eAdmin} = require("../helpers/eAdmin")
 
-router.get('/', (req,res) => {
+
+router.get('/', eAdmin, (req,res) => {
     res.render('admin/index')
 })
 
 
-router.get('/posts', (req,res) => {
+router.get('/posts', eAdmin, (req,res) => {
     res.send('Pagina Posts')
 })
 
-router.get('/categorias', (req,res) => {
+router.get('/categorias',eAdmin, (req,res) => {
     Categoria.find().sort({date:"desc"}).then((categorias) => {
         res.render('admin/categorias',{categorias:categorias})
     }).catch((err) => {
@@ -29,7 +31,7 @@ router.get('/categorias/add', (req,res) => {
     res.render('admin/addcategorias')
 })
 
-router.post("/categorias/nova",(req,res) => {
+router.post("/categorias/nova",eAdmin,(req,res) => {
     
     var erros = []
 
@@ -112,7 +114,7 @@ router.get("/categorias/deletar/:id", (req,res) => {
 })
 
 
-router.get("/postagens",(req,res) =>{
+router.get("/postagens",eAdmin,(req,res) =>{
     Postagem.find().populate("categoria").sort({data:"desc"}).then((postagens) => {
         res.render("admin/postagens", {postagens:postagens})
     }).catch((err) => {
