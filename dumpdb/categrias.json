@@ -1,0 +1,6 @@
+{"_id":{"$oid":"5da0d7643b5ae41464fe2865"},"date":{"$date":"2019-10-11T19:12:40.549Z"},"nome":"Web developer","slug":"Web developer","__v":0}
+{"_id":{"$oid":"5da1097f5e0c8d11e4a14187"},"date":{"$date":"2019-10-11T22:58:43.032Z"},"nome":"Javascript","slug":"Javascript","__v":0}
+{"_id":{"$oid":"5da10b931d53e8126c5b300a"},"date":{"$date":"2019-10-11T23:06:31.532Z"},"nome":"C++","slug":"C++","__v":0}
+{"_id":{"$oid":"5da10bb41d53e8126c5b300b"},"date":{"$date":"2019-10-11T23:06:31.532Z"},"nome":"Java","slug":"Java","__v":0}
+{"_id":{"$oid":"5da36a550c31e811ea14fb73"},"date":{"$date":"2019-10-13T18:14:10.265Z"},"nome":"MongoDB","slug":"Modern database","__v":0}
+{"_id":{"$oid":"5da4b8802997a813e5b5ed30"},"date":{"$date":"2019-10-14T17:42:49.157Z"},"nome":"Python","slug":"Linguagem interessante, mas as vezes chata pela identação e sem {} e begin end","__v":0}

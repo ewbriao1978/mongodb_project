@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5da8bdd20b223e2f398a543f"},"eAdmin":0,"nome":"Machado de Assis","email":"machadoassis@gmail.com","senha":"$2a$10$WL2BBG0guK0inmbLlGnaGuM91VsGiNco9Zm.uTmSwTfJL6kb83RI.","__v":0}
+{"_id":{"$oid":"5dab94524a435f108c80b6a3"},"eAdmin":1.0,"nome":"admin","email":"admin@admin.adm","senha":"$2a$10$fSXtzcJAR12s7nxxAZdXIeHgDb.7cPZKqRV0NLmElwPznmWSKNpta","__v":0}
+{"_id":{"$oid":"5dadf6f33112691aef045a40"},"eAdmin":0,"nome":"Eduardo Briao","email":"eduardo.briao@gmail.com","senha":"$2a$10$.cNKh8dwWH7MAm3lFbmEmeA3UfCKvBVpz6MIcJOp5k7DV37WihWj2","__v":0}
