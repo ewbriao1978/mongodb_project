@@ -16,6 +16,8 @@
       <li class="nav-item">
         <a class="nav-link" href="/usuarios/logout" tabindex="-1" aria-disabled="false">Logout</a>
       </li>
+
+      
       {{else}}
       <li class="nav-item">
         <a class="nav-link" href="/usuarios/login" tabindex="-1" aria-disabled="false">Login</a>
@@ -26,6 +28,14 @@
       
       {{/if}}
     </ul>
-    
+
+    {{#if user}}
+      <span class="navbar-text">
+        Bem vindo, Sr. {{user.nome}}!
+         <!--Bem vindo, administrador do sistema.-->   
+      </span>
+    {{/if}}
+
   </div>
 </nav>
+
